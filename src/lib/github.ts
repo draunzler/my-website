@@ -25,14 +25,6 @@ export interface Repository {
   updated_at: string
 }
 
-interface GitHubGraphQLResponse {
-  user: {
-    contributionsCollection: {
-      contributionCalendar: ContributionData
-    }
-  }
-}
-
 const getGitHubToken = () => {
   const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
   if (!token) {

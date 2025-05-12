@@ -90,11 +90,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Hi, I'm <motion.span 
-              className="text-primary"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4, duration: 0.5, type: "spring" }}
+            Hi, I&apos;m <motion.span 
+            className="text-primary"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4, duration: 0.5, type: "spring" }}
             >Arijit Saha</motion.span>
           </motion.h1>
           <motion.h2 

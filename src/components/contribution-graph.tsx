@@ -9,10 +9,14 @@ interface ContributionGraphProps {
   username: string
 }
 
-// Custom contribution colors with theme-appropriate colors for low contributions
 function getContributionColor(contributionCount: number, isDarkMode = false) {
+  // Define color levels with proper index signature
+  type ColorPalette = {
+    [key: number]: string;
+  };
+  
   // Light theme colors with custom color for low contributions
-  const colors = {
+  const colors: ColorPalette = {
     0: isDarkMode ? '#1D293D' : '#ebedf0', // Empty cells - dark blue in dark mode, light gray in light mode
     1: '#9be9a8', // level 1
     2: '#40c463', // level 2
@@ -21,7 +25,7 @@ function getContributionColor(contributionCount: number, isDarkMode = false) {
   };
   
   // Dark theme colors
-  const darkColors = {
+  const darkColors: ColorPalette = {
     0: '#1D293D', // empty/low - dark blue in dark mode
     1: '#0e4429', // level 1
     2: '#006d32', // level 2

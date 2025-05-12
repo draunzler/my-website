@@ -233,8 +233,14 @@ export function Timeline() {
   )
 }
 
+interface TimelineCardContentProps {
+  item: TimelineItem
+  index: number
+  controls: ReturnType<typeof useAnimation>
+}
+
 // Extracted card content component to avoid repetition
-function TimelineCardContent({ item, index, controls }) {
+function TimelineCardContent({ item, index, controls }: TimelineCardContentProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
