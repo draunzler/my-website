@@ -221,15 +221,15 @@ export default function Home() {
               <form className="space-y-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">Name</label>
-                  <Input id="name" placeholder="Your name" />
+                  <Input id="name" className="mt-2" placeholder="Your name" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" />
+                  <Input id="email" className="mt-2" type="email" placeholder="Your email" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">Message</label>
-                  <Textarea id="message" placeholder="Your message" className="min-h-[150px]" />
+                  <Textarea id="message" placeholder="Your message" className="min-h-[150px] mt-2" />
                 </div>
                 <Button className="w-full">
                   <FaPaperPlane className="mr-2 h-4 w-4" />
